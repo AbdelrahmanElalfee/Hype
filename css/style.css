@@ -1,0 +1,1384 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Patrick+Hand&family=Permanent+Marker&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+  --green: #b2e000;
+  --white: #f9f9f9;
+  --grey: #c3c3c3;
+  --black: #040404;
+  --bachground: #242424;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+label {
+  font-weight: 400;
+  margin-bottom: 3px;
+  color: #222;
+}
+
+hr {
+  margin: 30px 0 30px 0;
+  border-color: #ddd;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+.btn,
+.btn:focus,
+button,
+button:focus {
+  outline: none !important;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+/* Back to top CSS */
+
+.back-to-top {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  display: none;
+  text-align: center;
+  z-index: 10000;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: var(--bachground);
+  transition: all 0.5s;
+  padding-top: 4px;
+  color: var(--green) !important;
+}
+
+.back-to-top i {
+  font-size: 16px;
+  display: block;
+  line-height: 30px;
+}
+
+.back-to-top:hover,
+.back-to-top:active,
+.back-to-top:focus {
+  background-color: var(--bachground);
+}
+
+/* Navigation Bar CSS */
+
+.nav-sticky .btn-outline-white,
+.btn-outline-white {
+  color: var(--black) !important;
+  background-color: var(--white);
+  border-color: var(--grey) !important;
+}
+
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active {
+  color: var(--green) !important;
+}
+
+.navbar-custom {
+  background-color: transparent;
+  padding: 10px 0px;
+  width: 100%;
+  height: 75px;
+  border-radius: 0px;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-custom .navbar-nav li a {
+  color: var(--black) !important;
+  font-size: 15px;
+  background-color: transparent !important;
+  margin: 0 7px;
+  line-height: 24px;
+  transition: all 0.5s;
+}
+
+.navbar-custom .navbar-nav li .nav-btn-custom {
+  color: var(--black) !important;
+}
+
+.nav-btn {
+  font-size: 12px !important;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.navbar-custom .navbar-toggler {
+  color: var(--black) !important;
+  font-size: 35px;
+  padding: 0px;
+}
+
+.nav-sticky {
+  background-color: var(--white) !important;
+  box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1) !important;
+  padding: 15px 0px;
+}
+
+.nav-sticky .navbar-nav li a {
+  color: var(--black) !important;
+}
+
+.logo h5 {
+  font-family: "Permanent Marker", cursive;
+  color: var(--green);
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+  color: var(--white);
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:focus,
+.btn-outline-white:active,
+.btn-outline-white.active,
+.btn-outline-white.focus,
+.btn-outline-white:active,
+.btn-outline-white:focus,
+.btn-outline-white:hover,
+.open > .dropdown-toggle.btn-outline-white,
+.nav-sticky .btn-outline-white:hover,
+.nav-sticky .btn-outline-white:focus,
+.nav-sticky .btn-outline-white:active,
+.nav-sticky .btn-outline-white.active,
+.nav-sticky .btn-outline-white.focus,
+.nav-sticky .btn-outline-white:active,
+.nav-sticky .btn-outline-white:focus,
+.nav-sticky .btn-outline-white:hover,
+.open > .dropdown-toggle.nav-sticky.btn-outline-white {
+  color: var(--black);
+  background-color: var(--green);
+  border-color: var(--white);
+}
+/* Section CSS */
+
+.section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+  position: relative;
+  background-color: var(--white);
+}
+
+.section-title {
+  max-width: 600px;
+}
+
+.section-title h3 {
+  font-weight: 700;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn {
+  padding: 12px 34px;
+  font-size: 14px;
+  transition: all 0.5s;
+  letter-spacing: 0.6px;
+  color: var(--black);
+  box-shadow: none !important;
+  text-transform: uppercase;
+  outline: none !important;
+}
+
+.btn-custom {
+  border: 1px solid;
+}
+
+.btn-custom {
+  transition: all 0.5s;
+}
+
+.btn-outline-white {
+  border: 2px solid var(--white);
+}
+
+.btn-custom {
+  color: var(--white) !important;
+  background-color: transparent;
+  border-color: var(--grey);
+}
+
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+  color: var(--black) !important;
+  background-color: var(--green);
+  border-color: var(--grey);
+}
+
+.bg-gradiant-overlay {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.9)
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.9)
+  );
+  opacity: 0.7;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.social-icon > li a:hover {
+  background-color: var(--bachground) !important;
+  color: var(--grey) !important;
+}
+
+/* Landing Page */
+
+.bg-home-full {
+  height: 100vh;
+}
+
+#landing {
+  background-image: url("../img/dumbel.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: var(--white);
+  font-family: "Patrick Hand", cursive;
+}
+
+.home-title {
+  font-size: 48px;
+  color: var(--white);
+  font-weight: 700;
+  font-family: "Patrick Hand", cursive;
+}
+
+/* Service CSS */
+
+.service-content .services-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.service-content .services-desc h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 17px 0;
+}
+
+/* Footer CSS */
+
+.bg-footer {
+  background: var(--bachground) !important;
+}
+
+.social-icon > li a {
+  border-radius: 35px;
+  color: var(--green);
+  display: inline-block;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  width: 35px;
+  margin-left: 12px;
+  transition: all 0.5s;
+}
+
+.social-icon > li a:hover {
+  color: var(--white) !important;
+  background-color: transparent !important;
+}
+
+.footer-alt .copy-rights {
+  margin: 0;
+  text-align: center;
+  color: var(--grey);
+}
+
+.footerlink li a {
+  color: var(--grey);
+  margin: 0 8px;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+
+.footerlink li a:hover {
+  color: var(--grey);
+}
+
+/* home page SVG */
+
+svg#freepik_stories-healthy-lifestyle:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated
+  #freepik--background-complete--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--Shadow--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--Tomato--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--heart-rate--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--Banana--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--Dumbbell--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--Drink--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated #freepik--Device--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated
+  #freepik--character-2--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-healthy-lifestyle.animated
+  #freepik--character-1--inject-63 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animator-hidden {
+  display: none;
+}
+
+/* Landing Page Responsive */
+
+@media (min-width: 200px) and (max-width: 768px) {
+  .navbar-custom {
+    background-color: var(--white) !important;
+    padding: 10px 0px !important;
+  }
+
+  .navbar-custom .container {
+    width: 90%;
+  }
+
+  .home-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .home-subtitle {
+    line-height: 1.6;
+    font-size: 15px;
+  }
+
+  .navbar-custom .navbar-toggler {
+    color: var(--black);
+    font-size: 26px;
+    border: none;
+  }
+
+  .btn-contant span {
+    display: block;
+  }
+
+  .navbar-custom .navbar-nav li a {
+    color: var(--black) !important;
+  }
+
+  .nav-sticky .navbar-nav li a {
+    color: var(--black) !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar-custom .nav-button .btn-outline-white {
+    display: none;
+  }
+}
+
+/* SVG Responsive */
+
+@media (max-width: 575px) {
+  .svg-custom {
+    width: 50%;
+  }
+}
+
+.container-custom .home-content h2,
+.container-custom .home-content p {
+  color: var(--black);
+}
+
+.bg-category {
+  background-color: #242424;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  color: var(--black);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+/* Shop Page SVG*/
+
+svg#freepik_stories-ecommerce-web-page:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Floor--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Window--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Pictures--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Shadows--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Device--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Screen--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Awning--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Tab--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated
+  #freepik--speech-bubble-2--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated
+  #freepik--credit-card--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Plant--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Bags--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated #freepik--Coins--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated
+  #freepik--Character--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated
+  #freepik--shopping-cart-list--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-ecommerce-web-page.animated
+  #freepik--speech-bubble-1--inject-136 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  animation-delay: 0s;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lightSpeedRight {
+  from {
+    transform: translate3d(50%, 0, 0) skewX(-20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+
+.cover-shop-card {
+  background-image: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+}
+
+/* Gym Page SVG */
+
+svg#freepik_stories-gym:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-gym.animated #freepik--Floor--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Windows--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Poster--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Shadows--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Ball--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Mat--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Kettlebells--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Barbell--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--character-4--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--character-3--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--character-2--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--character-1--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--Bottles--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-gym.animated #freepik--indoor-bike--inject-41 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Trainer Page SVG */
+
+svg#freepik_stories-personal-trainer:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-personal-trainer.animated
+  #freepik--background-complete--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-personal-trainer.animated #freepik--Shadow--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-personal-trainer.animated #freepik--character-1--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomOut;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-personal-trainer.animated #freepik--character-2--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedRight;
+  animation-delay: 0s;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lightSpeedRight {
+  from {
+    transform: translate3d(50%, 0, 0) skewX(-20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Nutritionists Page SVG */
+
+svg#freepik_stories-eating-healthy-food:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Floor--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Shadows--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedRight;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Pictures--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Chair--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Table--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Fruits--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated #freepik--Bottle--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated
+  #freepik--Character--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) lightSpeedLeft;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-eating-healthy-food.animated
+  #freepik--speech-bubble--inject-62 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  animation-delay: 0s;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lightSpeedRight {
+  from {
+    transform: translate3d(50%, 0, 0) skewX(-20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lightSpeedLeft {
+  from {
+    transform: translate3d(-50%, 0, 0) skewX(20deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+
+/* Trainers & Nutritionists Card */
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green) !important;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:active,
+.social-link:focus {
+  background: var(--white) !important;
+  text-decoration: none;
+  color: var(--bachground) !important;
+}
+
+.qty-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--grey);
+  border-radius: 10px;
+  padding: 1rem 0.4rem;
+}
+.qty-input .product-qty,
+.qty-input .qty-count {
+  background: transparent;
+  color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  border: none;
+  display: inline-block;
+  min-width: 0;
+  height: 1rem;
+  line-height: 1;
+}
+.qty-input .product-qty:focus,
+.qty-input .qty-count:focus {
+  outline: none;
+}
+.qty-input .product-qty {
+  outline: none;
+  text-align: center;
+  width: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+}
+.qty-input .product-qty::-webkit-outer-spin-button,
+.qty-input .product-qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.qty-input .qty-count {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+.product_details p {
+  font-size: 18px;
+}
+
+.btn-product {
+  background-color: #b2e000 !important;
+  border: none;
+  color: #040404 !important;
+}
+
+@media (max-width: 1020px) {
+  .qty-input {
+    width: 50%;
+  }
+}
+
+.class-name {
+  color: var(--black);
+}
+
+.class-name:hover {
+  color: var(--green);
+}
+
+.order_card {
+  background-color: var(--white);
+  width: 300px;
+  border: none;
+  border-radius: 16px;
+}
+
+.info {
+  line-height: 19px;
+}
+
+.name {
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.order {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--grey);
+}
+.detail {
+  line-height: 19px;
+}
+
+.summery {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.text {
+  line-height: 15px;
+}
+.new {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 600;
+}
+.money {
+  font-size: 14px;
+  font-weight: 500;
+}
+.address {
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.img_container:hover img {
+  opacity: 0.6;
+}
+
+.edit {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img_container:hover .edit {
+  opacity: 1;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#filterRadio:checked:after {
+  background-color: #b2e000;
+}

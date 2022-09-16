@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&family=Patrick+Hand&family=Permanent+Marker&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+  --green: #b2e000;
+  --white: #f9f9f9;
+  --grey: #c3c3c3;
+  --black: #040404;
+  --bachground: #242424;
+}
+
+* {
+  font-family: "Chakra Petch", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 78px;
+  background: var(--bachground);
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.sidebar.active {
+  width: 240px;
+}
+
+.sidebar .logo_content .logo {
+  color: var(--white);
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar.active .logo_content .logo {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.logo_content .logo i {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Permanent Marker", cursive;
+  color: var(--green);
+}
+
+.sidebar #btn_menu {
+  position: absolute;
+  color: var(--white);
+  left: 50%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-40%);
+}
+
+.sidebar.active #btn_menu {
+  left: 88%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.sidebar ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* .sidebar ul li:first-child {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+} 
+
+.sidebar ul li input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: #313131;
+  padding: 0 0 0 50px;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.sidebar ul li .bx-search {
+  position: absolute;
+  left: 1rem;
+  z-index: 99;
+  font-size: 22px;
+  transition: all 0.5s ease;
+} */
+
+.sidebar ul li a {
+  width: 100%;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.sidebar ul li a:hover {
+  color: var(--green);
+  background: var(--white);
+}
+
+.sidebar ul li a i {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sidebar .links_name {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar .profile_content {
+  position: absolute;
+  color: var(--white);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sidebar .profile_content .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background: #313131;
+}
+
+.profile_content .profile .profile_details {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active .profile .profile_details {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.profile .profile_details img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.profile .profile_details .name_job {
+  margin-left: 10px;
+}
+
+.profile .profile_details .name {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile .profile_details .job {
+  font-size: 12px;
+}
+
+.profile #logout {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  min-width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.sidebar.active .profile #logout {
+  left: 95%;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 78px);
+  left: 78px;
+  font-size: 34px;
+  transition: all 0.5s ease-out;
+  overflow: scroll;
+  transition: all 0.5s ease;
+  height: 100%;
+}
+
+.main.active {
+  left: 240px;
+  width: calc(100% - 240px);
+  height: 100%;
+}
+.btn-close,
+.momo {
+  font-size: small;
+}

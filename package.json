@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "card": "^2.5.4",
+    "jshint": "^2.13.4"
+  }
+}
